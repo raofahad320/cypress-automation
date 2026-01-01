@@ -1,0 +1,15 @@
+{
+  "name": "cypress-automation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "rao:cypress": "cypress open"
+  },
+  "author": "RAO FAHAD",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cypress": "^13.17.0",
+    "moment": "^2.30.1"
+  }
+}
