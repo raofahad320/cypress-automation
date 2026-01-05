@@ -1,0 +1,8 @@
+{
+  "invalidEmail": "123@@!!",
+  "invalidPhone": "invalid@phone",
+  "validEmail": "fahad11@yopmail.com",
+  "fullName": "Rao Fahad",
+  "company": "UltraCodes",
+  "jobTitle": "SQA Engineer"
+}

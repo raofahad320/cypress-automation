@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "rao:cypress": "cypress open"
+    "rao:cypress": "cypress open",
+    "cypress:dev": "set CYPRESS_ENVIRONMENT=dev && cypress open",
+    "cypress:dev:run": "set CYPRESS_ENVIRONMENT=dev && cypress run",
+    "cypress:staging": "set CYPRESS_ENVIRONMENT=staging && cypress open",
+    "cypress:staging:run": "set CYPRESS_ENVIRONMENT=staging && cypress run",
+    "cypress:uat": "set CYPRESS_ENVIRONMENT=uat && cypress open",
+    "cypress:uat:run": "set CYPRESS_ENVIRONMENT=uat && cypress run"
   },
   "author": "RAO FAHAD",
   "license": "ISC",
