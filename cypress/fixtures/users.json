@@ -1,5 +1,25 @@
 {
-  "testEmail": "fahad_test@yopmail.com",
-  "userEmail1": "fahad1@yopmail.com",
-  "userEmail2": "test123@yopmail.com"
+  "users": [
+    {
+      "id": 1,
+      "username": "testuser1",
+      "fullName": "John Doe",
+      "role": "admin",
+      "status": "active"
+    },
+    {
+      "id": 2,
+      "username": "testuser2",
+      "fullName": "Jane Smith",
+      "role": "user",
+      "status": "active"
+    },
+    {
+      "id": 3,
+      "username": "testuser3",
+      "fullName": "Bob Johnson",
+      "role": "user",
+      "status": "inactive"
+    }
+  ]
 }

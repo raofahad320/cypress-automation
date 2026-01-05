@@ -1,8 +1,26 @@
 {
-  "invalidEmail": "123@@!!",
-  "invalidPhone": "invalid@phone",
-  "validEmail": "fahad11@yopmail.com",
-  "fullName": "Rao Fahad",
-  "company": "UltraCodes",
-  "jobTitle": "SQA Engineer"
+  "plans": [
+    {
+      "name": "Basic",
+      "price": "$29",
+      "features": ["Up to 100 tests", "Community support"]
+    },
+    {
+      "name": "Professional",
+      "price": "$99",
+      "features": ["Up to 1000 tests", "Priority support", "API access"]
+    },
+    {
+      "name": "Enterprise",
+      "price": "Custom",
+      "features": ["Unlimited tests", "24/7 support", "Custom integration"]
+    }
+  ],
+  "formValidation": {
+    "invalidEmail": "123@@!!",
+    "invalidPhone": "invalid@phone",
+    "fullName": "Rao Fahad",
+    "company": "UltraCodes",
+    "jobTitle": "SQA Engineer"
+  }
 }

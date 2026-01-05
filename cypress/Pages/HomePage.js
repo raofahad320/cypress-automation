@@ -1,39 +1,36 @@
 class HomePage {
-
-
-    
+  
   // ========= Selectors =========
-  // body                → Complete page container
-  // 'Orange Cloud Lab'  → Navigation / section link (by text)
-  // #orange-cloud-lab   → Orange Cloud Lab section
-  // footer              → Footer section
-  // img                 → Images on homepage
+  bodySelector = 'body'
+  orangeCloudLabLinkText = 'Orange Cloud Lab'
+  orangeCloudLabSection = '#orange-cloud-lab'
+  footerSelector = 'footer'
+  imageSelector = 'img'
 
-
-
+  // ========= Actions / Methods =========
   visit() {
     cy.visit('https://orangetesting.com/')
   }
 
   getBody() {
-    return cy.get('body')
+    return cy.get(this.bodySelector)
   }
 
   clickOrangeCloudLab() {
-    cy.contains('Orange Cloud Lab', { matchCase: false })
+    cy.contains(this.orangeCloudLabLinkText, { matchCase: false })
       .click({ force: true })
   }
 
   getOrangeCloudLabSection() {
-    return cy.get('#orange-cloud-lab')
+    return cy.get(this.orangeCloudLabSection)
   }
 
   getFooter() {
-    return cy.get('footer')
+    return cy.get(this.footerSelector)
   }
 
   getFirstImage() {
-    return cy.get('img').first()
+    return cy.get(this.imageSelector).first()
   }
 }
 

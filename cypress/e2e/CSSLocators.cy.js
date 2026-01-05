@@ -1,18 +1,22 @@
 describe('CSSLocators', () => {
 
-it("csslocators", () => {
+  it('Login using CSS selectors', () => {
 
-cy.visit("https://opensource-demo.orangehrmlive.com/");
-cy.get(".inputBox").type("Raofahad194@gmail.com")
-cy.wait(10000);
-cy.get(".inputBox").type("Raofahad@")
-cy.wait(10000);
+    cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
 
-cy.get(".submit").eq.click();
-cy.get(".lighter") .contains("submit")
+    // username
+    cy.get('input[name="username"]').type('Admin');
 
-})
+    // password
+    cy.get('input[name="password"]').type('admin123');
 
+    // login button
+    cy.get('button[type="submit"]').click();
 
+    // dashboard verification
+    cy.get('.oxd-topbar-header-breadcrumb')
+      .should('contain.text', 'Dashboard');
 
-})
+  });
+
+});
